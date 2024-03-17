@@ -24,7 +24,6 @@ pub enum State {
 async fn main() {
     pretty_env_logger::init();
     log::info!("Starting dialogue bot...");
-
     let bot = Bot::from_env();
 
     Dispatcher::builder(
@@ -66,7 +65,6 @@ async fn receive_full_name(bot: Bot, dialogue: MyDialogue, msg: Message) -> Hand
             bot.send_message(msg.chat.id, "Send me plain text.").await?;
         }
     }
-
     Ok(())
 }
 
@@ -88,7 +86,6 @@ async fn receive_age(
             bot.send_message(msg.chat.id, "Send me a number.").await?;
         }
     }
-
     Ok(())
 }
 
