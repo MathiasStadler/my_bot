@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+# export TELOXIDE_TOKEN=<Your token here>
+export TELOXIDE_TOKEN=7165697880:AAFFQvg_AZV09AtKOXCP4MMWPHTO8H849rY
